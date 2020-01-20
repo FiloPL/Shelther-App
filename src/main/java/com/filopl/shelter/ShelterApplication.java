@@ -20,11 +20,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //         • Aplikacja mobilna (na dowolny system operacyjny), która korzysta z powyższego webserwisu.
 //         • Zamiast aplikacji mobilnej może być to też strona www. Ważne by pobierała dane korzystając z napisanego przez nas webserwisu. Co można jeszcze dodać?
 //         • Testy jednostkowe, które pokrywają najważniejszą funkcjonalność (nie martw się jeśli jeszcze nie znasz niektórych pojęć jak np. „testy jednostkowe”. Zostaną one później krótko omówione). • Eksport statusu schroniska do pliku .csv. • Generowanie dziennego raportu ze stanu schroniska do pliku .pdf, który zostanie wysłany na określonego maila oraz dodany do jakiegoś archiwum. • Możliwość dodawania zdjęć określonego zwierzaka przez aplikację mobilną (wymaga rozszerzenia webserwisu oraz aplikacji mobilnej).
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages="com.filopl.shelter")
 public class ShelterApplication {
-
     public static void main(String[] args) {
-
         SpringApplication.run(ShelterApplication.class, args);
     }
 
